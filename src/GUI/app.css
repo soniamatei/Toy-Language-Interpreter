@@ -1,0 +1,78 @@
+#anchorPane{
+    -fx-background-image: url("https://media.tenor.com/KjVxfRrrncUAAAAd/matrix.gif");
+}
+
+.label {
+    -fx-background-color: rgba(0, 0, 0, 0.65);
+    -fx-border-color: #05470a;
+    -fx-border-style:  dashed;
+    -fx-border-width: 0;
+    -fx-font-family: Monospaced;
+    -fx-text-fill: #05470a;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color:  #05470a;
+    -fx-text-fill: #000000;
+}
+.list-view .list-cell{
+    -fx-text-fill: #075c0e;
+    -fx-font-size: 15;
+    -fx-font-family: Monospaced;
+}
+.list-view{
+    -fx-background-color: #000000;
+    -fx-border-color:  #05470a;
+    -fx-border-style: dashed;
+    -fx-border-width: 2.5;
+    -fx-control-inner-background: #000000;
+}
+.list-view .scroll-bar:horizontal{
+    -fx-scale-x: 0;
+}
+
+.table-view {
+    -fx-background-color: #000000;
+    -fx-border-color:  #05470a;
+    -fx-border-style: dashed;
+    -fx-border-width: 2.5;
+    -fx-control-inner-background: #000000;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: #05470a;
+    -fx-font-weight: bold;
+    -fx-border-color: #05470a;
+    -fx-border-width: 0;
+}
+
+.table-row-cell {
+    -fx-border-color: #000000;
+}
+
+.table-view .column-header{
+    -fx-background-color: #000000;
+    -fx-text-fill: #075c0e;
+    -fx-font-weight: bold;
+
+}
+
+.button {
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #05470a;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+}
+
+#backButton {
+    -fx-background-color: #054209;
+    -fx-text-fill: #000000;
+    -fx-font-size: 15;
+    -fx-background-radius: 0em;
+}
+
+#closeButton {
+    -fx-font-size: 15;
+    -fx-background-color: #000000;
+    -fx-background-radius: 0em;
+}

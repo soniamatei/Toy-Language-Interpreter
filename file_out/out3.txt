@@ -1,0 +1,6839 @@
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=3}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=3}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(varf=src/input.txt;(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))))), string varf]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(varf=src/input.txt;(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))))]
+SymTable:{varf=}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))), varf=src/input.txt]
+SymTable:{varf=}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))))]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))), Open file(varf)]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))), int varc]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))]
+SymTable:{varf=src/input.txt, varc=0}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))), Read file(varf, varc)]
+SymTable:{varf=src/input.txt, varc=0}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(Read file(varf, varc);(print(varc);Close file(varf))), print(varc)]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(Read file(varf, varc);(print(varc);Close file(varf)))]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(print(varc);Close file(varf)), Read file(varf, varc)]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[(print(varc);Close file(varf))]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[Close file(varf), print(varc)]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[Close file(varf)]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15, 50]
+FileTable:{src/input.txt=java.io.BufferedReader@1f0a58bb}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15, 50]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=3}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=2}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=1}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{v=0}
+Out:[4, 3, 2, 1, 0]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))), boolean a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int v;(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))))]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v))), int v]
+SymTable:{a=false}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=true;(( IF(a) THEN(v=2) ELSE(v=3) );print(v)))]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v)), a=true]
+SymTable:{a=false, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(( IF(a) THEN(v=2) ELSE(v=3) );print(v))]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), ( IF(a) THEN(v=2) ELSE(v=3) )]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), v=2]
+SymTable:{a=true, v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{a=true, v=2}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=true, v=2}
+Out:[2]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=3}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=2}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=1}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[print(v)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 2:
+ExeStack:[]
+SymTable:{v=0}
+Out:[4, 3, 2, 1, 0]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(varf=src/input.txt;(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))))), string varf]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(varf=src/input.txt;(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))))]
+SymTable:{varf=}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))), varf=src/input.txt]
+SymTable:{varf=}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(Open file(varf);(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))))]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))), Open file(varf)]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 3:
+ExeStack:[(int varc;(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))))]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))), int varc]
+SymTable:{varf=src/input.txt}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(Read file(varf, varc);(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))))]
+SymTable:{varf=src/input.txt, varc=0}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(print(varc);(Read file(varf, varc);(print(varc);Close file(varf)))), Read file(varf, varc)]
+SymTable:{varf=src/input.txt, varc=0}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(print(varc);(Read file(varf, varc);(print(varc);Close file(varf))))]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(Read file(varf, varc);(print(varc);Close file(varf))), print(varc)]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(Read file(varf, varc);(print(varc);Close file(varf)))]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(print(varc);Close file(varf)), Read file(varf, varc)]
+SymTable:{varf=src/input.txt, varc=15}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[(print(varc);Close file(varf))]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[Close file(varf), print(varc)]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[Close file(varf)]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15, 50]
+FileTable:{src/input.txt=java.io.BufferedReader@a842ddd}
+Heap:{}
+
+Program 3:
+ExeStack:[]
+SymTable:{varf=src/input.txt, varc=50}
+Out:[15, 50]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 4:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 4:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 4:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 5:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 4:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 5:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 4:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 4:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 5:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=4;(While(v>0) (print(v);v=v-1);print(v)))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v)), v=4]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(While(v>0) (print(v);v=v-1);print(v))]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=4}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=4}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=3}
+Out:[4]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=3}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=2}
+Out:[4, 3]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=2}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), (print(v);v=v-1)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1, print(v)]
+SymTable:{v=1}
+Out:[4, 3, 2]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1), v=v-1]
+SymTable:{v=1}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v), While(v>0) (print(v);v=v-1)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(v)]
+SymTable:{v=0}
+Out:[4, 3, 2, 1]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{v=0}
+Out:[4, 3, 2, 1, 0]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b)))), int a]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(int b;(a=2+3*5;(b=a+1;print(b))))]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b))), int b]
+SymTable:{a=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(a=2+3*5;(b=a+1;print(b)))]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b)), a=2+3*5]
+SymTable:{a=0, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(b=a+1;print(b))]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b), b=a+1]
+SymTable:{a=17, b=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[print(b)]
+SymTable:{a=17, b=18}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=17, b=18}
+Out:[18]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))), int v]
+SymTable:{}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(Ref(int) a;(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))))]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))), Ref(int) a]
+SymTable:{v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(v=10;(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))))]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))), v=10]
+SymTable:{a=RefValue(0, int), v=0}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(new(a, 22);(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a)))), new(a, 22)]
+SymTable:{a=RefValue(0, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{}
+
+Program 0:
+ExeStack:[(fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))));(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a))), fork: (WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(WriteHeap(a, 30);(v=32;(print(v);print(WriteHeap(a)))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a)))), WriteHeap(a, 30)]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[]
+FileTable:{}
+Heap:{1=22}
+
+Program 0:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(v=32;(print(v);print(WriteHeap(a))))]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10]
+FileTable:{}
+Heap:{1=30}
+
+Program 0:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a))), v=32]
+SymTable:{a=RefValue(1, int), v=10}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[(print(v);print(WriteHeap(a)))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a)), print(v)]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[print(WriteHeap(a))]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32]
+FileTable:{}
+Heap:{1=30}
+
+Program 1:
+ExeStack:[]
+SymTable:{a=RefValue(1, int), v=32}
+Out:[10, 30, 32, 30]
+FileTable:{}
+Heap:{1=30}
+
