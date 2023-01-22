@@ -2,6 +2,7 @@
 
 This is a project on which I've been working on for the past semester.
 The interpretor is written in **Java** using **JavaFX**. The styling of the GUI was done with **SceneBuilder** and a little bit of **css**.
+The IDE used was **IntelliJ IDEA Ultimate**.
 
 ---
 
